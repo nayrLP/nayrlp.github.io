@@ -16,6 +16,7 @@ header {
     clear: left;
     float: none;
     padding-right: 0px;
+    margin-top: 83px;
 }
 header .profileLogo .logoPlaceholder {
 	background-color: rgba(208,207,207,1.00);
@@ -48,21 +49,24 @@ header .profileHeader h1 {
     text-align: center;
 }
 header .profileHeader h3 {
-    font-family: cabin;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgba(146,146,146,1.00);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 15px;
     text-align: center;
     font-style: normal;
     text-transform: capitalize;
+    opacity: 1;
+    margin-top: auto;
+    margin-right: auto;
 }
 hr {
 	background-color: rgba(208,207,207,1.00);
 	height: 1px;
 }
 header .profileHeader p {
-    font-family: sans-serif;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgba(146,146,146,1.00);
     font-size: 18px;
     font-weight: 400;
@@ -85,14 +89,23 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 /* Main Content sections */
 .mainContent .section1 {
-	display: block;
+    display: block;
+    padding-right: 234px;
+    padding-left: 234px;
+    color: #393939;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-align: left;
+    font-size: small;
 }
 .section1 .sectionTitle, .section2 .sectionTitle {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(146,146,146,1.00);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
 }
 .section1 .sectionTitleRule, .section2 .sectionTitleRule {
 	margin: 0 3% 0 0;
@@ -145,7 +158,11 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	cursor: pointer;
 }
 .mainContent .externalResourcesNav .externalResources:hover {
-	background-color: rgba(153,153,153,1.00);
+    background-color: rgba(153,153,153,1.00);
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    display: none;
 }
 .externalResourcesNav .externalResources a {
 	font-family: 'Montserrat', sans-serif;
@@ -266,8 +283,14 @@ footer {
 @media only screen and (min-width : 481px) and (max-width : 1024px) {
 /* Header */
 header {
-	width: 100%;
-	float: none;
+    width: 100%;
+    float: none;
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-top: auto;
+    padding-top: auto;
 }
 header .profileLogo .logoPlaceholder {
 	display: inline-block;
@@ -357,8 +380,8 @@ header .profilePhoto {
 }
 header .profileHeader {
     text-align: left;
-    padding-top: 2px;
     display: block;
+    margin-top: -25px;
 }
 header .socialNetworkNavBar .socialNetworkNav {
 	width: 74px;
@@ -386,11 +409,15 @@ header .socialNetworkNavBar .socialNetworkNav {
 	font-family: sans-serif;
 }
 .mainContent .externalResourcesNav {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-align: center;
-	padding-top: 0px;
-	clear: both;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 0px;
+    clear: both;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    display: block;
 }
 .mainContent .externalResourcesNav .externalResources {
 	width: 199px;
